@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة المنتجات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .product-info {
+            padding: 15px;
+        }
+        .product-info h3 {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        .product-info p {
+            margin: 0 0 10px;
+            color: #666;
+        }
+        .product-info .price {
+            font-weight: bold;
+            color: #000;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>منتجاتنا</h1>
+    <div class="product-grid">
+        <!-- Card 1 -->
+        <div class="product-card">
+            <img src="https://example.com/product1.jpg" alt="منتج 1">
+            <div class="product-info">
+                <h3>اسم المنتج 1</h3>
+                <p>وصف قصير للمنتج 1.</p>
+                <p class="price">100 ر.س</p>
+                <a href="#" class="btn">أضف إلى السلة</a>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="product-card">
+            <img src="https://example.com/product2.jpg" alt="منتج 2">
+            <div class="product-info">
+                <h3>اسم المنتج 2</h3>
+                <p>وصف قصير للمنتج 2.</p>
+                <p class="price">150 ر.س</p>
+                <a href="#" class="btn">أضف إلى السلة</a>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="product-card">
+            <img src="https://example.com/product3.jpg" alt="منتج 3">
+            <div class="product-info">
+                <h3>اسم المنتج 3</h3>
+                <p>وصف قصير للمنتج 3.</p>
+                <p class="price">200 ر.س</p>
+                <a href="#" class="btn">أضف إلى السلة</a>
+            </div>
+        </div>
+        <!-- يمكنك إضافة المزيد من بطاقات المنتجات هنا -->
+    </div>
+</div>
+
+</body>
+</html>
